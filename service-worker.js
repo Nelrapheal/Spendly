@@ -2,7 +2,7 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("spendly-cache").then((cache) => {
       return cache.addAll([
-        "./home.html",
+        "./index.html",
         "./home.css",
         "./home.js",
         "./manifest.json",

@@ -2,7 +2,7 @@
   "name": "Spendly",
   "short_name": "Spendly",
   "description": "Spendly helps uni students track spending and limit expenses easily.",
-  "start_url": "./home.html",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
