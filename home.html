@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spendly 💸</title>
+
+    <link rel="stylesheet" href="home.css" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <header class="head">
+      <div class="h1">
+        <button class="btn" onclick="menu.hidden^=1">&#9776;</button>
+        <h1>Splendly 💸</h1>
+      </div>
+
+      <div class="n">
+        <nav class="nav" id="menu" hidden>
+          <li><a href="home.html">Home</a></li>
+          <li>
+            <a href="https://wa.me/7067905508" target="_blank">Contact</a>
+          </li>
+          <li><a href="#tip">Tips</a></li>
+          <li><a href="#total">Total Balance</a></li>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="h3">Track your spending, save more.</h3>
+      </div>
+    </header>
+
+    <section class="sec">
+      <main>
+        <div class="set">
+          <label for="num">Set Total money (₦)</label><br />
+          <input type="number" id="num" placeholder="e.g 50,000" />
+          <button class="btn" id="btn">Set Total</button>
+        </div>
+
+        <div class="bal">
+          <p id="bal">Balance: ₦0</p>
+        </div>
+
+        <div class="set1">
+          <label for="exp">Expense Name</label><br />
+          <input type="text" id="exp" placeholder="e.g Food" /><br />
+          <label for="amo">Amount (₦0)</label><br />
+          <input type="number" id="amo" placeholder="e.g Food" /><br />
+
+          <label>Category</label><br />
+          <select id="select">
+            <option value="Food">Food</option>
+            <option value="Drink">Drink</option>
+            <option value="Water">Water</option>
+            <option value="Data/Subscriptions">Data/Subscriptions</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Education">Education</option>
+            <option value="Others">Others</option></select
+          ><br />
+          <button class="btn1" id="add">Add Expense</button>
+          <p id="total">Total Spent: ₦0</p>
+          <ul id="ul"></ul>
+        </div>
+        <button id="reset">Reset</button>
+        <button id="tip">Tips</button>
+      </main>
+    </section>
+    <script src="home.js"></script>
+  </body>
+</html>
